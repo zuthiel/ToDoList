@@ -1,30 +1,38 @@
 <!doctype html>
 <head>
-	<title> Exercises </title>
+	<title> To-Do List </title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
 </head>
 <body>
 	<header>
-		<h1>Examples Here</h1>
+		<h2> To - Do List </h2>
 	</header>
 	<div id="main">
-		<section>
+		<section class="col-sm-2">
 			<article>
-				<h2>To- Do widget</h2>
-
 				<div class="form-inline">
-					<p> Task </p>
-
 					<input type="text" id="tbox" name="tbox" class="form-control">
-					<button onclick="createCB()" type="button" class="btn btn-success">Add!</button>
-					<p id="todo"></p>
-				<div class="col-sm-offset-2 col-sm-10">
+					<button onclick="wTodo.prototype.createCheckBox()" type="button" class="btn btn-success">Add Task</button>
+					<br/>
+					<br/>
+				</div>
+			</article>
+			<article>
+				<ul class= "list-group" id="todo"> </ul>
+			</article>
+		</section>
+		<section class="col-sm-2">
+			<article>
+				<button onclick="wTodo.prototype.saveList()" type="button" class="btn btn-info">Save List</button>
+				<br/>
+			</article>
+			<article>
+				<ul id="savelist" class="list-group"> </ul>
 			</article>
 		</section>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="script.js"></script>
+	<script src="todo.js"></script>
 </body>
 </html>
